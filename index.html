@@ -10,30 +10,31 @@
     <!-- Botón de menú móvil -->
     <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
 
-    <!-- Modal de rechazo -->
-    <div class="modal" id="rechazoModal">
-        <div class="modal-content">
-            <h3>¿Está seguro que desea rechazar esta oferta?</h3>
-            <button onclick="confirmarRechazo()">Confirmar</button>
-            <button onclick="cerrarModal()">Cancelar</button>
-        </div>
-    </div>
+    <!-- Modales (estructura básica) -->
+    <div class="modal" id="rechazoModal">...</div>
+    <div class="modal" id="asignacionModal">...</div>
+    <div class="modal confirmacion-modal" id="confirmacionModal">...</div>
+    
+    <!-- Vista de formulario para terceros -->
+    <div id="formTercerosView" style="display:none">...</div>
 
     <div class="dashboard">
         <!-- Menú lateral -->
-        <div class="sidebar" id="sidebar">
-            <div class="menu-item" onclick="showView('inicio')">Inicio</div>
-            <div class="menu-item" onclick="showView('ofertas')">Ofertas</div>
-            <div class="menu-item" onclick="showView('configuracion')">Configuración</div>
-        </div>
+        <div class="sidebar" id="sidebar">...</div>
 
         <!-- Contenido principal -->
-        <div class="main-content" id="main-content">
-            <!-- Vistas se cargarán aquí dinámicamente -->
-            <div id="inicio-view" class="view">
-                <h1>Bienvenido a CTCarga</h1>
-                <p>Sistema de gestión de transporte de carga</p>
-            </div>
+        <div class="main-content">
+            <!-- Vista de Inicio -->
+            <div id="inicioView">...</div>
+            
+            <!-- Vista de Gestión de Carga -->
+            <div id="gestionCargaView" style="display:none">...</div>
+            
+            <!-- Vista de Formulario -->
+            <div id="formView" style="display:none">...</div>
+            
+            <!-- Vista de Ofertas Activas -->
+            <div id="ofertasActivasView" style="display:none">...</div>
         </div>
     </div>
 
