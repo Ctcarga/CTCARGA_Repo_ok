@@ -4,34 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTCarga.com - Transporte de Carga</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
     <!-- Botón de menú móvil -->
-    <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+    <button class="mobile-menu-btn">☰</button>
 
-    <!-- Modales (rechazo, asignación, confirmación) -->
-    <div class="modal" id="rechazoModal">[...]</div>
-    <div class="modal" id="asignacionModal">[...]</div>
-    <div class="modal confirmacion-modal" id="confirmacionModal">[...]</div>
-
-    <!-- Vista de formulario para terceros -->
-    <div id="formTercerosView">[...]</div>
-
-    <div class="dashboard">
-        <!-- Menú lateral -->
-        <div class="sidebar" id="sidebar">[...]</div>
-
-        <!-- Contenido principal -->
-        <div class="main-content">
-            <!-- Todas las vistas (inicio, gestión, formulario, ofertas) -->
-            <div id="inicioView">[...]</div>
-            <div id="gestionCargaView">[...]</div>
-            <div id="formView">[...]</div>
-            <div id="ofertasActivasView">[...]</div>
+    <!-- Modal de rechazo -->
+    <div class="modal" id="rechazoModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="modal-back-btn">Atrás</button>
+                <h3 class="modal-title">Motivo de Rechazo</h3>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="motivoRechazo">Por favor indique el motivo del rechazo:</label>
+                    <textarea id="motivoRechazo" rows="5" style="width: 100%;"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger">Cancelar</button>
+                <button class="btn btn-primary">Enviar Rechazo</button>
+            </div>
         </div>
     </div>
 
-    <script src="assets/js/main.js"></script>
+    <!-- Resto de tu HTML aquí... -->
+
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
