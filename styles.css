@@ -1,0 +1,9 @@
+:root {
+    --primary: #2c3e50;
+    --secondary: #1abc9c;
+    /* ... (todo el CSS anterior) ... */
+}
+
+@media (max-width: 992px) {
+    /* Estilos responsive */
+}
