@@ -4,73 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTCarga.com - Transporte de Carga</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <!-- Botón de menú móvil -->
     <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
 
-    <!-- Modal de rechazo -->
-    <div class="modal" id="rechazoModal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button class="modal-back-btn" onclick="cancelarRechazo()">Atrás</button>
-                <h3 class="modal-title">Motivo de Rechazo</h3>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label for="motivoRechazo">Por favor indique el motivo del rechazo:</label>
-                    <textarea id="motivoRechazo" rows="5" style="width: 100%;"></textarea>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-danger" onclick="cancelarRechazo()">Cancelar</button>
-                <button class="btn btn-primary" onclick="confirmarRechazo()">Enviar Rechazo</button>
-            </div>
-        </div>
-    </div>
+    <!-- Modales (rechazo, asignación, confirmación) -->
+    <div class="modal" id="rechazoModal">[...]</div>
+    <div class="modal" id="asignacionModal">[...]</div>
+    <div class="modal confirmacion-modal" id="confirmacionModal">[...]</div>
+
+    <!-- Vista de formulario para terceros -->
+    <div id="formTercerosView">[...]</div>
 
     <div class="dashboard">
         <!-- Menú lateral -->
-        <div class="sidebar" id="sidebar">
-            <div class="logo-container">
-                <h2>CTCarga</h2>
-            </div>
-            <div class="menu-item active" onclick="showView('inicio')">
-                Inicio
-            </div>
-            <div class="menu-item" onclick="showView('ofertas')">
-                Ofertas
-            </div>
-            <div class="menu-item" onclick="showView('configuracion')">
-                Configuración
-            </div>
-        </div>
+        <div class="sidebar" id="sidebar">[...]</div>
 
         <!-- Contenido principal -->
-        <div class="main-content" id="main-content">
-            <!-- Vista de Inicio -->
-            <div id="inicio-view" class="view">
-                <h1>Bienvenido a CTCarga</h1>
-                <p>Sistema de gestión de transporte de carga</p>
-                <div class="card-container">
-                    <div class="card" onclick="showView('ofertas')">
-                        <div class="card-title">Ver Ofertas</div>
-                        <p>Gestiona tus ofertas de transporte</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Vista de Ofertas -->
-            <div id="ofertas-view" class="view" style="display:none">
-                <h2>Gestión de Ofertas</h2>
-                <button onclick="crearOferta('standard')">Nueva Oferta Standard</button>
-                <button onclick="crearOferta('premium')">Nueva Oferta Premium</button>
-                <div id="ofertas-container"></div>
-            </div>
+        <div class="main-content">
+            <!-- Todas las vistas (inicio, gestión, formulario, ofertas) -->
+            <div id="inicioView">[...]</div>
+            <div id="gestionCargaView">[...]</div>
+            <div id="formView">[...]</div>
+            <div id="ofertasActivasView">[...]</div>
         </div>
     </div>
 
-    <script src="./js/scripts.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
